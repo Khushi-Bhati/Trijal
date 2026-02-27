@@ -1,0 +1,140 @@
+.innovation {
+  padding: 4.5rem clamp(1.5rem, 4vw, 5rem) 5rem;
+  text-align: center;
+  background: #fff;
+}
+
+.innovation__heading {
+  margin-bottom: 2.25rem;
+}
+
+.innovation__eyebrow {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 0.6rem;
+}
+
+.innovation h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  margin: 0;
+  color: #303030;
+}
+
+.innovation__pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-bottom: 2.75rem;
+}
+
+.innovation__pill {
+  min-width: 210px;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid #9b9b9b;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 160ms ease;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.innovation__pill.active {
+  background: #16a34a;
+  color: #fff;
+  border-color: #16a34a;
+  box-shadow: 0 12px 26px rgba(22, 163, 74, 0.25);
+}
+
+.innovation__pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.innovation__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 2.5rem;
+  align-items: center;
+  text-align: left;
+}
+
+.innovation__image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.innovation__copy h3 {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  color: #252525;
+}
+
+.innovation__copy p {
+  margin: 0 0 1rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+}
+
+.innovation__cta {
+  margin-top: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #e3342f;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  box-shadow: 0 12px 24px rgba(227, 52, 47, 0.18);
+}
+
+.innovation__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(227, 52, 47, 0.26);
+}
+
+@media (max-width: 768px) {
+  .innovation {
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  .innovation__pill {
+    min-width: unset;
+    width: calc(50% - 0.45rem);
+  }
+
+  .innovation__body {
+    text-align: center;
+  }
+
+  .innovation__copy {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .innovation {
+    padding: 2rem 1rem 2.5rem;
+  }
+
+  .innovation__pill {
+    width: 100%;
+  }
+
+  .innovation h2 {
+    font-size: 1.6rem;
+  }
+
+  .innovation__copy h3 {
+    font-size: 1.3rem;
+  }
+}

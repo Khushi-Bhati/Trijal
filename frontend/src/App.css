@@ -1,0 +1,7 @@
+.App {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #1c1c1c;
+  background-color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}

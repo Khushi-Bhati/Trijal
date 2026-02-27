@@ -1,0 +1,19 @@
+.facility-video {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.facility-video__media {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .facility-video__media {
+    height: 55vh;
+  }
+}

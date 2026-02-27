@@ -1,0 +1,433 @@
+/* ── Base ─────────────────────────────────────────────────────────── */
+.contact-page {
+  background: #ffffff;
+  color: #1f1f1f;
+}
+
+/* ── Hero ─────────────────────────────────────────────────────────── */
+.contact-hero {
+  width: 100%;
+  height: clamp(180px, 45vw, 380px);
+  background: url("./../assets/contact.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.contact-hero__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero__label {
+  font-size: clamp(1.6rem, 6vw, 3.5rem);
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 12px rgba(6, 5, 5, 0.9);
+  background: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* ── Career Section ───────────────────────────────────────────────── */
+.career-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 2.5rem;
+  padding: 3.5rem clamp(1rem, 4vw, 5rem) 4rem;
+}
+
+.career-left h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.contact-lead {
+  margin: 0 0 2rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.contact-subheading {
+  margin: 0 0 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-weight: 700;
+}
+
+/* Accordion */
+.contact-accordion {
+  border: 1px solid #dbe1eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.acc-item+.acc-item {
+  border-top: 1px solid #dbe1eb;
+}
+
+.acc-header {
+  width: 100%;
+  background: #f3f7ff;
+  border: none;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  text-align: left;
+}
+
+.acc-item.open .acc-header {
+  background: #d9e6ff;
+}
+
+.acc-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.acc-body {
+  padding: 1rem 1.25rem 1.2rem;
+  background: #fff;
+}
+
+.acc-body h5 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.acc-body ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+/* Career form card */
+.contact-form-card {
+  border: 1px solid #e4e6ed;
+  border-radius: 10px;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.07);
+}
+
+.contact-form-card h4 {
+  margin: 0 0 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.grid.two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.8rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.upload-box {
+  border: 1px dashed #c7ccd6;
+  border-radius: 10px;
+  background: #f7f8fb;
+  padding: 1.25rem;
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.upload-graphic {
+  font-size: 1.8rem;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #e3342f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.9rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(227, 52, 47, 0.2);
+}
+
+/* ── Help Centre Intro ────────────────────────────────────────────── */
+.contact-help-intro {
+  text-align: center;
+  padding: 2rem clamp(1rem, 6vw, 8rem) 0.5rem;
+  color: #4a4a4a;
+  line-height: 1.7;
+}
+
+.contact-help-intro p {
+  margin: 0 0 0.5rem;
+  font-size: clamp(0.88rem, 2.5vw, 1rem);
+}
+
+/* ── Contact Two-Card Layout ──────────────────────────────────────── */
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 2rem;
+  padding: 2.5rem clamp(1rem, 4vw, 5rem) 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Shared card base */
+.contact-info-card,
+.contact-msg-card {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+/* Red label above heading */
+.contact-card-label {
+  display: block;
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: #e3342f;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* Bold heading */
+.contact-card-heading {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Red underline divider */
+.contact-card-divider {
+  width: 2.5rem;
+  height: 3px;
+  background: #e3342f;
+  border-radius: 2px;
+  margin-bottom: 1.4rem;
+}
+
+/* Get in touch — link list */
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-info-list a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  font-size: clamp(0.88rem, 2vw, 0.97rem);
+  transition: color 0.15s ease;
+  word-break: break-all;
+}
+
+.contact-info-list a:hover {
+  color: #e3342f;
+}
+
+/* Send us a message — form */
+.contact-msg-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.contact-msg-form .grid.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.contact-msg-form input,
+.contact-msg-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  background: #f5f5f5;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.contact-msg-form input:focus,
+.contact-msg-form textarea:focus {
+  border-color: #e3342f;
+  background: #fff;
+}
+
+.contact-msg-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-send-btn {
+  width: 100%;
+  background: #e3342f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.9rem 1.2rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background 0.2s ease, transform 150ms ease, box-shadow 150ms ease;
+}
+
+.contact-send-btn:hover {
+  background: #c0211c;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(227, 52, 47, 0.25);
+}
+
+.contact-send-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ── Status Messages ──────────────────────────────────────────────── */
+.form-status {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-status.success {
+  color: #0f9d58;
+}
+
+.form-status.error {
+  color: #d93025;
+}
+
+/* ── Responsive — Tablet (≤768px) ────────────────────────────────── */
+@media (max-width: 768px) {
+  .career-section {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.5rem 3rem;
+    gap: 2rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem 3rem;
+    gap: 1.5rem;
+  }
+
+  .contact-help-intro {
+    padding: 2rem 1.5rem 0.5rem;
+  }
+
+  .contact-msg-form .grid.two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ── Responsive — Small Tablet / Large Mobile (≤600px) ──────────── */
+@media (max-width: 600px) {
+  .contact-msg-form .grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  .grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-help-intro {
+    padding: 1.5rem 1rem 0.5rem;
+  }
+}
+
+/* ── Responsive — Mobile (≤480px) ───────────────────────────────── */
+@media (max-width: 480px) {
+  .contact-hero {
+    height: clamp(140px, 40vw, 200px);
+  }
+
+  .contact-hero__label {
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+  }
+
+  .career-section {
+    padding: 1.5rem 1rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .contact-content {
+    padding: 1.5rem 1rem 2.5rem;
+    gap: 1.25rem;
+  }
+
+  .contact-info-card,
+  .contact-msg-card {
+    padding: 1.2rem;
+    border-radius: 8px;
+  }
+
+  .contact-card-heading {
+    font-size: 1.1rem;
+  }
+
+  .contact-form-card {
+    padding: 1rem;
+  }
+
+  .acc-header {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .acc-body {
+    padding: 0.85rem 1rem 1rem;
+  }
+
+  .upload-box {
+    padding: 1rem;
+  }
+
+  .contact-help-intro p {
+    font-size: 0.88rem;
+  }
+}
